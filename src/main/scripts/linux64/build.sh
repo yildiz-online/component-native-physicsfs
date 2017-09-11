@@ -1,6 +1,7 @@
 cmake ../../c++ -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../../../../target/classes/linux64" -G "Unix Makefiles"
 
 make install
+r1=$?
 
 rm -R CMakeFiles
 rm CMakeCache.txt
@@ -12,3 +13,5 @@ rm libphysfs.a
 rm libphysfs.so
 rm libphysfs.so.1
 rm libphysfs.so.2.0.3
+
+return $r1
