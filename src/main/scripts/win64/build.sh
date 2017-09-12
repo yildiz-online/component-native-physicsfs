@@ -2,15 +2,12 @@ cmake ../../c++ -DCMAKE_C_FLAGS="-w" -DCMAKE_BUILD_TYPE=Release -DCMAKE_COLOR_MA
 
 make install
 r1=$?
+make clean
 
 rm -R CMakeFiles
 rm CMakeCache.txt
 rm cmake_install.cmake
 rm Makefile
-rm test_physfs.exe
 rm install_manifest.txt
-rm libphysfs.a
-rm libphysfs.dll
-rm libphysfs.dll.a
 
 return $r1
