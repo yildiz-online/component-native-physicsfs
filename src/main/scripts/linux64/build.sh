@@ -13,4 +13,5 @@ rm cmake_install.cmake
 rm Makefile
 rm install_manifest.txt
 
-return $r1
+exit ${r1}
+
