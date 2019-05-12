@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cmake ../../c++ -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-fPIC -std=gnu++11" -DCMAKE_INSTALL_PREFIX="../../../../target/classes/linux64" -G "Unix Makefiles"
 
 make install
